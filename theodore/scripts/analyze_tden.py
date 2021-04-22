@@ -33,7 +33,6 @@ def main(largv):
 
     ifile = 'dens_ana.in'
 
-    arg=largv.pop(0)
     while len(largv)>0:
         arg = largv.pop(0)
         if arg in ["-h", "-H", "--help"]:
@@ -89,4 +88,4 @@ def main(largv):
     print("CPU time: % .1f s, wall time: %.1f s"%(process_time() - tc, perf_counter() - tt))
 
 if __name__=='__main__':
-    main(sys.argv)
+    main(sys.argv[1:])

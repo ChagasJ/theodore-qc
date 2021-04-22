@@ -10,7 +10,7 @@ export THEODIR=`dirname ${ABSPATH}`
 echo "THEODIR set to $THEODIR"
 
 # set PATH and PYTHONPATH
-export PATH=$THEODIR/bin:$PATH
+export PATH=$THEODIR/theodore/scripts:$PATH
 export PYTHONPATH=$THEODIR
 
 # add external packages here if they have not been installed in the default locations
